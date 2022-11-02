@@ -27,7 +27,7 @@ export const Header=()=>{
           </p>
           <Button bg="#a62440"> Start Your New Career </Button>
         </div>
-        <Image src="./images/hero.jpg"/>
+        <Image  src="./images/hero.jpg"/>
       </Flex>
     </Container>
     </StyledHeader>
