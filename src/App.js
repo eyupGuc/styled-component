@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./component/styles/Global.styled";
 import data from "./data";
 import Card from "./component/Card";
+import Container from "./component/styles/Container.styled";
 const style={
   colors:{header:"#fff",body:"#fff", footer:"#8A1C4A"},
   margin:{},responsive:"768px"
@@ -13,14 +14,14 @@ const App = () => {
     <ThemeProvider theme={style}>
       <GlobalStyles/>
       <Header/>
-      <div>
+      <Container>
         {data.map((item)=>{
-           console.log(item);
-          return(<Card key={item.id} data={data}/>
+          //  console.log(item);
+          return(<Card key={item.id} data={item}/>
           
           )
         })}
-      </div>
+      </Container>
     </ThemeProvider>
   );
 };
