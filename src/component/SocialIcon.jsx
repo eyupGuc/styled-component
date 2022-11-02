@@ -1,7 +1,8 @@
 import {FaTwitter,FaFacebook,FaLinkedin} from "react-icons/fa"
+import { StyleSocialIcons } from "./styles/SocialIcons.styled"
 
 export default function(){
-return(<div>
+return(<StyleSocialIcons>
 
 
 <li>
@@ -15,6 +16,6 @@ return(<div>
 </li>
 
 
-</div>)
+</StyleSocialIcons>)
 
 }
